@@ -1,6 +1,7 @@
 // const { decode } = require('64');
+const { Base64 } = require('js-base64');
 
-const decode = input => Buffer.from(input.toString('ascii'), 'base64');
+const { decode } = Base64;// = input => Buffer.from(input.toString('ascii'), 'base64');
 
 module.exports = (encoding, body) => {
   switch (encoding) {
